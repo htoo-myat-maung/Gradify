@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Gradify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@500&family=Outfit:wght@500&family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <a href="app.html" class="logo-link">
+                <div class="logo">Gradify</div>
+            </a>
+            <h2>Welcome Back</h2>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="login-button">Log In</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="signup.html">Sign up for free</a></p>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            // Add login logic here
+            console.log('Login submitted');
+            // Redirect to dashboard after successful login
+            // window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html> 

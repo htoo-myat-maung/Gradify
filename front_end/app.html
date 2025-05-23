@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradify - AI-Powered Grading Solution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@500&family=Outfit:wght@500&family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Gradify</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">how to use</a>
+            <a href="login.html" class="nav-link">login</a>
+            <a href="signup.html" class="btn btn-trial">free trial</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Let AI simply do your grading</h1>
+        <p>and spend more of your time on improving your student's life</p>
+        <div class="trial-text">1-month free trial when you sign up for Gradify premium</div>
+    </section>
+
+    <section class="features">
+        <div class="feature-section">
+            <h2>Automate grading with power of AI</h2>
+            <div class="feature-card">
+                <p>Gradify empowers educators to grade programming assignments, math problems, and written responses instantly and without bias. With support for multiple file formats and customizable test cases, it delivers smart feedback, detects errors, and eliminates repetitive tasks — so you can spend less time grading and more time teaching.</p>
+            </div>
+        </div>
+
+        <div class="feature-section right-section">
+            <h2>Grading efficiency redefined</h2>
+            <div class="feature-card blue">
+                <p>Gradify empowers educators to grade programming assignments, math problems, and written responses instantly and without bias. With support for multiple file formats and customizable test cases, it delivers smart feedback, detects errors, and eliminates repetitive tasks — so you can spend less time grading and more time teaching.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About us</h4>
+                <a href="#">Our mission</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="#">Contact us</a>
+                <a href="#">Help center</a>
+                <a href="#">Live chat</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms and condition</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Gradify. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        function openSignupModal() {
+            document.getElementById('signupModal').style.display = 'flex';
+        }
+
+        function closeSignupModal() {
+            document.getElementById('signupModal').style.display = 'none';
+        }
+
+        function handleSignup(event) {
+            event.preventDefault();
+            // Add signup logic here
+            console.log('Sign up submitted');
+            closeSignupModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('signupModal');
+            if (event.target === modal) {
+                closeSignupModal();
+            }
+        }
+    </script>
+</body>
+</html>

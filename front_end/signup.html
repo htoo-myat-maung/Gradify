@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Gradify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@500&family=Outfit:wght@500&family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <a href="app.html" class="logo-link">
+                <div class="logo">Gradify</div>
+            </a>
+            <h2>Sign Up for Free Trial</h2>
+            <form id="signupForm" onsubmit="handleSignup(event)">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="signup-button">Start Free Trial</button>
+            </form>
+            <p class="terms">By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+            <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </div>
+
+    <script>
+        function handleSignup(event) {
+            event.preventDefault();
+            // Add signup logic here
+            console.log('Sign up submitted');
+            // Redirect to main page or dashboard after successful signup
+            // window.location.href = 'app.html';
+        }
+    </script>
+</body>
+</html> 
